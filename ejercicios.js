@@ -1,6 +1,6 @@
 //ejercicio 1
 
-function hasUniqueCharacters(str) {
+function CaracterUnico(str) {
     const charSet = new Set();
   
     for (let char of str) {
@@ -15,3 +15,24 @@ function hasUniqueCharacters(str) {
   
   console.log(hasUniqueCharacters("String")); // true
   console.log(hasUniqueCharacters("Some String")); // false
+
+
+
+///ejercicio 2
+function FactoresPrimos(n) {
+    const factores = [];
+    let divisor = 2;
+  
+    while (n >= 2) {
+      if (n % divisor === 0) {
+        factores.push(divisor);
+        n = n / divisor;
+      } else {
+        divisor++;
+      }
+    }
+  
+    return factores;
+  }
+
+  
